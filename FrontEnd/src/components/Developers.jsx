@@ -1,4 +1,5 @@
 "use client";
+// Import animation, icons and reusable UI components
 import { IconArrowLeft, IconArrowRight } from "@tabler/icons-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { CustomImage } from "./CustomImage"; // Using your CustomImage component

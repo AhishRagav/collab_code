@@ -1,4 +1,4 @@
-import dotenv from "dotenv";
+import dotenv from "dotenv"; // Load environment variables from .env file
 dotenv.config();
 import connect from "./db/db.js";
 connect();
@@ -38,7 +38,7 @@ app.use((req, res, next) => {
 
 
 
-// Main server route
+// Main server route to verify server is running
 app.get("/", (req, res) => {
   res.send("Collab Code main server running here");
 });
@@ -47,6 +47,7 @@ app.get("/", (req, res) => {
 app.get("/users", (req, res) => {
   res.send(" hey from users route - CollabCode");
 });
+//// Register application routes
 app.use("/projects", projectroutes);
 app.use("/users", userrouter);
 app.use("/chats", chatrouter);
